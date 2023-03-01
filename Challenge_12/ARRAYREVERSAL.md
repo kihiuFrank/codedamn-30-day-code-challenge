@@ -1,4 +1,5 @@
-Array Reversal
+# Array Reversal
+
 Task
 
 1. Create a function reverseArray(array, length of array) . This reverseArray() will take two arguments - a dynamic uint type array and length of the array.
