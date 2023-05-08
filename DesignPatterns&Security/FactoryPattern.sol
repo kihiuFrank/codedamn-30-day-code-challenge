@@ -12,7 +12,7 @@ contract ComputerCompany {
         desktop.push(new Desktop());
 
         // if you created the object like shown below,
-        // you wouldn't be able to track the created objects to know how many were created etc. So you use a dynamic array so you can track
+        // you wouldn't be able to track the created objects to know how many were created etc. So you use a dynamic array to track/access the objects
 
         // Desktop desktop = new Desktop();
     }
