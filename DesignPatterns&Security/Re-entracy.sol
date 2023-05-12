@@ -9,6 +9,11 @@ contract ReEntrancy {
     function requestEther() public {
         uint temp = balance[addr]; // store the balance temporary
         balance(addr) = 0; // update balance to zero before transfering
+
+        // to break the loop and avoid spending infinite gas
+        // NOTE: Not a verified solution but a possible one.
+        assert(balance[addr] == 0);
+
         // now we can transfer
         addr.transfer(temp);
     }
